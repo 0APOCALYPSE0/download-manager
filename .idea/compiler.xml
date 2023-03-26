@@ -9,5 +9,8 @@
         <module name="JavaIDM" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="JavaIDM" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>

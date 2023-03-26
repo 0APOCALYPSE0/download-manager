@@ -11,14 +11,16 @@ public class FileInfo {
     private SimpleStringProperty status = new SimpleStringProperty();
     private SimpleStringProperty action = new SimpleStringProperty();
     private SimpleStringProperty path = new SimpleStringProperty();
+    private SimpleStringProperty percent = new SimpleStringProperty();
 
-    public FileInfo(String index, String name, String url, String status, String action, String path) {
+    public FileInfo(String index, String name, String url, String status, String action, String path, String percent) {
         this.index.set(index);
         this.name.set(name);
         this.url.set(url);
         this.status.set(status);
         this.action.set(action);
         this.path.set(path);
+        this.percent.set(percent);
     }
 
     public String getIndex() {
@@ -91,5 +93,17 @@ public class FileInfo {
 
     public void setPath(String path) {
         this.path.set(path);
+    }
+
+    public String getPercent() {
+        return percent.get();
+    }
+
+    public SimpleStringProperty percentProperty() {
+        return percent;
+    }
+
+    public void setPercent(String percent) {
+        this.percent.set(percent);
     }
 }
